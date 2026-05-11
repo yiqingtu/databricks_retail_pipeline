@@ -13,9 +13,6 @@ spark = (
     .getOrCreate()
 )
 
-#df= spark.createDataFrame([("Alice", 25)], ["name", "age"])
-#df.show()
-
 df = spark.read.csv("data/superstore.csv", header=True, inferSchema=True)
 print("Row count:", df.count())
 df.show(5, truncate=False)

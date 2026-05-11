@@ -4,3 +4,8 @@ data/
 .*/
 tests/
 notebooks/spark-warehouse/
+
+delta/
+notebooks/derby.log
+notebooks/metastore_db/
+notebooks/test_delta/
